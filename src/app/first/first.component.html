@@ -1,0 +1,29 @@
+<p>first works!</p>
+<!-- <p>
+  <input
+    type="text"
+    #box
+    (keyup)="getValue(box.value)"
+    name="username"
+    placeholder="Enter name"
+  />
+</p>
+<p>{{ displayVal }}</p>
+<h1>{{message}}</h1>
+<button type="button" [disabled]="canClick" (click) = "sayMessage()">Trigger alert message</button>
+<p [id]="sayHelloId" [style.color]="fontcolor">You can set my color in the component</p>
+<p>My color is {{fontcolor}}</p> -->
+
+<h2>Hello World: ngIf!</h2>
+
+<button type="button" (click)="onEditClick()">Make text editable!</button>
+
+<div *ngIf="canEdit; else noEdit">
+    <p>You can edit the following paragraph.</p>
+</div>
+
+<ng-template #noEdit>
+    <p>The following paragraph is read only. Try clicking the button!</p>
+</ng-template>
+
+<p [contentEditable]="canEdit">{{ message }}</p>
