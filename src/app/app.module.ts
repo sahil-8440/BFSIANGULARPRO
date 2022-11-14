@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { FaqComponent } from './faq/faq.component';
 import { LogpageComponent } from './logpage/logpage.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -15,11 +18,14 @@ import { LogpageComponent } from './logpage/logpage.component';
     FirstComponent,
     FaqComponent,
     LogpageComponent,
+    LoginComponent,
+    RegisterComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
